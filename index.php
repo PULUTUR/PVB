@@ -43,8 +43,18 @@ if (isset($error)) {
 if (isset($success)) {
     echo "Success: " . $success;
 }
-
 ?>
+
+<head>
+    <title>Reserveringen</title>
+</head>
+<center>
+    <h1>Restaurant Excellent Taste</h1>
+    <p>
+    <h2><a href="Home.php">Home</a> I <b>Resevering</b> I <a href="customer/index.php">Klanten</a></h2>
+    </p>
+</center>
+
 <form method="post" action="index.php">
     Klant (<a href="customer/index.php" target="_blank">nieuw</a>):<br>
     <select name="name">
