@@ -36,6 +36,25 @@ if(isset($_GET["id"])){
 
 ?>
 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Klant wijzigen</title>
+</head>
+
+<center>
+    <h1>Restaurant Excellent Taste</h1>
+    <p>
+    <h2><a href="../Home.php">Home</a> I <a href="../index.php">Resevering</a> I <a href="index.php">Klanten</a></h2>
+    </p>
+</center>
+
 <form method="post" action="edit.php?id=<?= $id ?>">
     Name: <input type="text" name="name" value="<?= $c['name'] ?>"><br>
     Email: <input type="text" name="email" value="<?= $c['email'] ?>"><br>
